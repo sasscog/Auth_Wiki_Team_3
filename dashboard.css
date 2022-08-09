@@ -8,6 +8,18 @@
     display: flex;
     min-height: 100vh;
 }
+.sidebar1{
+    
+    flex: 1 1 0;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    background-color: #111D55;
+}
+.sidebar1 .menu .tag{
+    display: block;
+    padding: 1em;
+    transition: 0.2s linear;
+}
 .sidebar{
     
     flex: 1 1 0;
@@ -26,6 +38,9 @@
 #head h3{
     font-weight: 100;
     margin-top: 10px;
+}
+#head1{
+    display: none;
 }
 hr{
    color: white; 
@@ -58,7 +73,7 @@ hr{
     padding: .1rem;
 }
 #nav1{
-    margin-top: 20px;
+    margin-top: 5px;
     display: flex;
 }
 #nav{
@@ -89,13 +104,13 @@ input.nosubmit {
     width: 1.80em;
     height: 5vh;
     margin-top: 1px;
-    right: -290px;
+    right: -460px;
 }
 .ppix{
     height: 6vh;
     width: 35px;
     margin-top: 4px;
-    margin-left: 300px;
+    margin-left: 500px;
     border-radius: 100px;
 }
 .user_name{
@@ -105,13 +120,13 @@ input.nosubmit {
 }
 .menu-toggle {
     display: none;
-    position: fixed;
+    position: relative;
     top: 2rem;
     right: 2rem;
     width: 60px;
     height: 60px;
     border-radius: 99px;
-    background-color: #2e3047;
+    background-color: #fff;
     cursor: pointer;
 }
 .hamburger{
@@ -129,7 +144,7 @@ input.nosubmit {
     width: 100%;
     height: 4px;
     border-radius: 99px;
-    background-color: #FFF;
+    background-color: #2e3047;
     transition-duration: .25s;
 }
 .hamburger> span::before{
@@ -154,7 +169,7 @@ input.nosubmit {
 #two-factor{
     width: 100%;
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
     background-image: linear-gradient(to right,#111D55 , rgb(227, 227, 217));
 }
 .Arrow{
@@ -630,12 +645,25 @@ hr{
     .menu-toggle{
         display: block;
         border-radius: 2px;
-        top: 3rem;
-        right: 2rem;
+        top: 1rem;
+        left: 43rem;
         display: block;
         width: 20px;
         height: 4vh;
-    }   
+    }
+    #head1{
+        margin-left: 250px;
+        display: block;
+        margin-top: 0px;
+        width: 90%;
+    }
+    #head1 h3{
+        color: #3456FF;
+        margin-top: 10px;
+    }
+    #head1 .ladder{
+        margin-left: 50px;
+    }  
     #two-factor{
         display: block;
         background-image: linear-gradient(#111D55 , rgb(227, 227, 217));
@@ -656,14 +684,15 @@ hr{
     .section{
         margin-left: 205px;
     }
-    #nav1, .code-dis, .Example, .code, textarea, .Comment, .social, .footer{
+    #two-factor, #head1, #nav1, .code-dis, .Example, .code, textarea, .Comment, .social, .footer{
         width: 100%;
     }
     input.nosubmit{
+        display: none;
         max-width: 550px;
     }
     #nav1{
-        margin-top: -90px;
+        margin-top: -150px;
     }
     .content{
         padding-top: 8rem;
@@ -687,10 +716,12 @@ hr{
         display: none;
     }
     .sliders{
+        display: none;
         right: -250px;
     }
     .bell{
-        right: -405px;
+        margin-top: 7px;
+        right: 465px;
     }
     
 }
@@ -699,20 +730,11 @@ hr{
         top: 6px;
         right: -245px;
     }
-    input.nosubmit{
-        max-width: 450px;
-    }
-    .bell{
-        top: 9px;
-        height: 4vh;
-        width: 18px;
-        right: -360px;
-    }
     #two-factor, #nav1, .code-dis, .Example, .code, textarea, .Comment, .social, .footer{
         width: 100%;
     }
-    #nav1{
-        margin-top: -90px;
+    .download-ar{
+        display: none;
     }
     .sidebar{
         position: fixed;
@@ -722,14 +744,6 @@ hr{
         width: 55%;
         max-width: 300px;
         transition: 0.2s linear;
-    }
-    .menu-toggle{
-        border-radius: 2px;
-        top: 3rem;
-        right: 2rem;
-        display: block;
-        width: 20px;
-        height: 4vh;
     }
     .butt-com{
         margin-left: auto;
@@ -752,9 +766,6 @@ hr{
         top: 3px;
         right: -200px;
     }
-    input.nosubmit{
-        max-width: 390px;
-    }
     #download, #two-factor, #nav1, .code-dis, .Example, .code, textarea, .Comment, .social, .footer{
         width: 100%;
     }
@@ -772,20 +783,6 @@ hr{
         border-radius: 5px;
         padding: 10px;
         cursor: pointer;
-    }
-    .menu-toggle{
-        border-radius: 2px;
-        top: 2rem;
-        right: 2rem;
-        display: block;
-        width: 20px;
-        height: 4vh;
-    }
-    .bell{
-        top: 7px;
-        height: 4vh;
-        width: 18px;
-        right: -350px;
     }
     #nav{
         margin-top: -10px;
